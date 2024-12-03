@@ -1,0 +1,74 @@
+@use "./globals";
+@use "./variables";
+@use "./mixins";
+
+
+body {
+    background-color: variables.$purple;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  
+  }
+  
+  
+  .invoices {
+    width: 70%;
+
+  }
+  
+  
+  .invoice__header {
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+     
+    //   p {
+    //     @include normalText;
+    //   }
+  
+      .invoice__header-actions {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+          
+    }
+  
+  .new-invoice button {
+  
+     // @include button;
+      background-color: variables.$purple;
+      color: variables.$offWhite;
+  }
+  
+  .invoice__list {
+    list-style: none;
+    margin-top: 2rem;
+  }
+  
+  .invoice__item {
+    background-color: variables.$offWhite;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+     
+    p {
+      //@include normalText;
+    }
+  }
+  
+  .invoice__item-total-amount {
+    display: flex;
+    justify-content: flex-end;
+   
+  }
