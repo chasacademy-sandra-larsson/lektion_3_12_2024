@@ -1,12 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice App</title>
+  <link rel="stylesheet" href="dist/main.css">
+  <script src="src/main.js" type="module"></script>
 </head>
+
 <body>
-    
+  <header></header>
+  <main>
+    <div class="invoices">
+      <div class="invoice__header">
+        <div>
+          <h1>Invoices</h1>
+          <p>There are <span class="invoice__header-count">12</span> invoices</p>
+        </div>
+        <div class="invoice__header-actions">
+          <div class="invoice__header-sort">
+            <h3>Sort by</h3>
+            <select name="sort" id="sort-filter">
+              <option value="newest">Newest</option>
+              <option value="oldest">Oldest</option>
+            </select>
+          </div>          <div class="invoice__header-filters">
+            <h3>Filter by status</h3>
+            <select name="status" id="status-filter">
+              <option value="all">All</option>
+              <option value="paid">Paid</option>
+              <option value="pending">Pending</option>
+              <option value="draft">Draft</option>
+            </select>
+          </div>          <div class="new-invoice">
+            <button>
+            New Invoice
+          </button>
+          </div>
+        </div>
+      </div>
+      <ul class="invoice__list">
+        <!-- <li class="invoice__item">
+          <div class="invoice__item-header">
+            <p>#123456</p>
+          </div>
+          <div class="invoice__item-details">
+            <p>Due 12/01/2024</p>
+          </div>
+          <div>
+            <p class="invoice__item-name">Jensen Huang</p>
+          </div>
+          <div class="invoice__item-total">
+            <p>$1,234.56</p>
+          </div>
+          <div class="invoice__item-status">
+            <p>Paid</p>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+
+  </main>
+  <footer></footer>
 </body>
+
 </html>
