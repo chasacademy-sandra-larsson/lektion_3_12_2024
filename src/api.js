@@ -1,6 +1,8 @@
 
 
-export const getInvoices = async () => {
+
+
+ const getInvoices = async () => {
 
     try {
         const response = await fetch("data.json");
@@ -12,4 +14,6 @@ export const getInvoices = async () => {
         console.error("Error fethcing", error);
     }
 }
+
+export { getInvoices }
 
