@@ -35,7 +35,8 @@ const renderInvoices = async () => {
         //        } 
         //        return invoice;
         //     })
-        .filter(invoice => filterSelect.value !== 'all' ? invoice.status === filterSelect.value : true)        .map(invoice => 
+        .filter(invoice => filterSelect.value !== 'all' ? invoice.status === filterSelect.value : true)       
+        .map(invoice => 
                 `<li class="invoice__item">
                   <div class="invoice__item-header">
                     <p>#${invoice.id}</p>
