@@ -4,7 +4,7 @@
 
 
 body {
-    background-color: variables.$purple;
+    background-color: variables.$offWhite;
   }
   
   main {
@@ -30,9 +30,9 @@ body {
       align-items: center;
   
      
-    //   p {
-    //     @include normalText;
-    //   }
+      p {
+        @include mixins.normalText;
+      }
   
       .invoice__header-actions {
         display: flex;
@@ -44,7 +44,7 @@ body {
   
   .new-invoice button {
   
-     // @include button;
+      @include mixins.button;
       background-color: variables.$purple;
       color: variables.$offWhite;
   }
@@ -63,7 +63,7 @@ body {
     margin-bottom: 1rem;
      
     p {
-      //@include normalText;
+      @include mixins.normalText;
     }
   }
   

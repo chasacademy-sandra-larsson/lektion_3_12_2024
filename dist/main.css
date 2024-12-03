@@ -50,7 +50,7 @@ h4 {
 }
 
 body {
-  background-color: #7c5dfa;
+  background-color: #f9fafe;
 }
 
 main {
@@ -70,6 +70,11 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.invoice__header p {
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: -0.25px;
+}
 .invoice__header .invoice__header-actions {
   display: flex;
   align-items: center;
@@ -77,6 +82,16 @@ main {
 }
 
 .new-invoice button {
+  height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  transition: 0.2s all ease;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: -0.25px;
+  font-weight: bold;
   background-color: #7c5dfa;
   color: #f9fafe;
 }
@@ -94,6 +109,12 @@ main {
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
+.invoice__item p {
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: -0.25px;
+}
+
 .invoice__item-total-amount {
   display: flex;
   justify-content: flex-end;
